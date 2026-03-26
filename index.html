@@ -3,113 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Kim Sang Woo | Portfolio</title>
+  <title>Sangwoo Kim | Portfolio</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
   <style>
-    body { font-family: 'Lato', Verdana, Helvetica, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; color: #444; line-height: 1.5; }
-    a { color: #1772d0; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-    h1 { font-size: 2.2em; color: #222; margin-bottom: 0px; }
-    h2 { border-bottom: 1px solid #eee; padding-bottom: 8px; margin-top: 50px; }
-    .project-table { width: 100%; border-collapse: collapse; }
-    .project-row { border-bottom: 1px solid #f5f5f5; }
-    .project-img { width: 25%; padding: 25px 20px 25px 0; vertical-align: top; }
-    .project-img img { width: 100%; border-radius: 8px; border: 1px solid #eee; }
-    .project-desc { width: 75%; padding: 25px 0; vertical-align: top; }
-    .title { font-weight: bold; font-size: 1.1em; color: #222; }
-    .award { color: #ff6600; font-weight: bold; font-size: 0.9em; }
-    .tech { font-size: 0.9em; color: #666; margin-top: 10px; }
-    ul { padding-left: 20px; }
-    li { margin-bottom: 5px; }
+    :root {
+      --bg-color: #ffffff;
+      --text-main: #24292f;
+      --text-sub: #57606a;
+      --text-header: #111111;
+      --link-color: #333333;
+      --link-hover: #000000;
+      --border-color: #eaecef;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.6;
+      color: var(--text-main);
+      background-color: var(--bg-color);
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 50px 25px;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    a { color: var(--link-color); text-decoration: none; font-weight: 500; transition: 0.2s; }
+    a:hover { color: var(--link-hover); text-decoration: underline; }
+
+    h1, h2, h3 { color: var(--text-header); font-weight: 700; margin-top: 1.5em; margin-bottom: 0.5em; }
+    h2 { font-size: 1.5em; border-bottom: 1px solid var(--border-color); padding-bottom: 10px; margin-top: 60px; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* 상단 프로필 영역 */
+    .profile-container { display: flex; justify-content: space-between; align-items: center; margin-bottom: 50px; gap: 30px; }
+    .profile-text { flex: 1; }
+    .profile-text h1 { font-size: 2.5em; margin: 0 0 10px 0; letter-spacing: -1px; }
+    .profile-titles { font-size: 1.1em; color: var(--text-sub); margin-bottom: 20px; font-weight: 500; }
+    .profile-bio { font-size: 1em; margin-bottom: 25px; color: var(--text-main); }
+
+    .profile-image img { width: 180px; height: 180px; border-radius: 10px; object-fit: cover; border: 1px solid var(--border-color); }
+
+    /* 프로젝트 엔트리 스타일 */
+    .entry { margin-bottom: 35px; }
+    .entry-header { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; }
+    .entry-title { font-size: 1.1em; font-weight: 700; color: var(--text-header); }
+    .entry-meta { font-size: 0.85em; color: var(--text-sub); white-space: nowrap; font-weight: 500; }
+    .entry-tech { font-family: ui-monospace, SFMono-Regular, SF Mono, Menlo, Consolas, Liberation Mono, monospace; font-size: 0.85em; color: #6a737d; margin: 4px 0 8px 0; }
+    .entry-content ul { margin: 5px 0; padding-left: 18px; list-style-type: square; }
+    .entry-content li { margin-bottom: 4px; font-size: 0.95em; }
+
+    .award-label { background: #f0f0f0; color: #333; padding: 2px 8px; border-radius: 4px; font-size: 0.8em; font-weight: 600; margin-left: 8px; vertical-align: middle; }
+    .social-links a { margin-right: 15px; font-size: 0.95em; }
+
+    footer { margin-top: 100px; padding-top: 20px; border-top: 1px solid var(--border-color); text-align: center; color: var(--text-sub); font-size: 0.8em; }
+
+    @media (max-width: 768px) {
+      .profile-container { flex-direction: column-reverse; text-align: center; }
+      .entry-header { flex-direction: column; align-items: flex-start; gap: 2px; }
+    }
   </style>
 </head>
 <body>
 
-  <table style="width:100%; border:0;">
-    <tr>
-      <td style="width:75%; vertical-align: middle;">
-        <h1>김상우 (Kim Sang Woo) [cite: 5]</h1>
-        <p>"끊임없는 도전 그리고 이론을 구현하는 과정이 즐거운 개발자입니다." [cite: 3]</p>
-        <p>
-          <a href="mailto:swjohn0121@gmail.com">Email</a> [cite: 9] &nbsp;/&nbsp;
-          <a href="https://github.com/Underove">GitHub</a> [cite: 11] &nbsp;/&nbsp;
-          <a href="tel:010-7378-4886">010-7378-4886</a> [cite: 7]
-        </p>
-      </td>
-      <td style="width:25%; vertical-align: middle; text-align: right;">
-        <img src="images/profile.jpg" alt="Profile" style="width:160px; border-radius:10px;">
-      </td>
-    </tr>
-  </table>
+  <header class="profile-container">
+    <div class="profile-text">
+      <h1>Kim Sang Woo</h1>
+      <div class="profile-titles">AI & Robotics Engineer | 3D Reconstruction | LLM Agents</div>
+      <p class="profile-bio">
+        I am a developer who finds joy in the process of implementing theories into reality. 
+        Focusing on <strong>3D Reconstruction</strong> and <strong>LLM-based automation</strong>, 
+        I aim to build optimized AI systems that solve real-world problems.
+      </p>
+      <div class="social-links">
+        <a href="mailto:swjohn0121@gmail.com">Email</a>
+        <a href="https://github.com/Underove" target="_blank">GitHub</a>
+        <a href="tel:010-7378-4886">Contact</a>
+      </div>
+    </div>
+    <div class="profile-image">
+      <img src="images/profile.jpg" alt="Kim Sang Woo">
+    </div>
+  </header>
 
-  <h2>Selected Projects</h2>
-  <table class="project-table">
-    
-    <tr class="project-row">
-      <td class="project-img"><img src="images/curat3r.jpg" alt="Curat3R"></td>
-      <td class="project-desc">
-        <a href="https://github.com/Underove/Curat3R" class="title">Curat3R: 나만의 3D 박물관 만들기</a> [cite: 26, 27]<br>
+  <main>
+    <h2>Selected Projects</h2>
+
+    <div class="entry">
+      <div class="entry-header">
+        <a href="https://github.com/Underove/Curat3R" class="entry-title">Curat3R: 단일 이미지 기반 3D Reconstruction 아카이빙 플랫폼</a>
+        <span class="entry-meta">2025.10 – 2026.01</span>
+      </div>
+      <div class="entry-tech">Python, SPAR3D, TRELLIS.2, CLIP, React, Three.js</div>
+      <div class="entry-content">
         <ul>
-          <li>CLIP(ViT-B/32) 기반 5단계 Semantic Filtering 설계로 부적합 객체 판별 및 서버 리소스 최적화 [cite: 50]</li>
-          <li>SPAR3D(0.7초 추론) 및 TRELLIS.2 결합 Dual-Track Inference로 생성 속도/품질 한계 해결 [cite: 51]</li>
-          <li>Three.js 활용 3D 모델 실시간 360도 인터랙션 및 AI 오류 보정용 Human Override 구현 [cite: 52]</li>
+          <li>CLIP(ViT-B/32) 기반 Semantic Filtering 설계로 3D 복원에 부적합한 객체 사전 판별 및 서버 리소스 최적화 [cite: 50]</li>
+          <li>SPAR3D(0.7초 추론) 및 TRELLIS.2를 결합한 Dual-Track Inference로 생성 속도와 품질 간의 Trade-off 해결 [cite: 51]</li>
+          <li>Three.js/WebGL 활용 실시간 360도 인터랙션 환경 및 AI 판별 오류 보정용 Human Override 인터페이스 구현 [cite: 52]</li>
         </ul>
-        <div class="tech">Python, PyTorch, SPAR3D, TRELLIS.2, CLIP, React, Three.js [cite: 33]</div>
-      </td>
-    </tr>
+      </div>
+    </div>
 
-    <tr class="project-row">
-      <td class="project-img"><img src="images/pifiri.jpg" alt="Pi-FiRi"></td>
-      <td class="project-desc">
-        <a href="https://github.com/Underove/Pi-FIRI" class="title">Pi-FiRi: 화재 감지 지능형 로봇 시스템</a> [cite: 55, 56]<br>
+    <div class="entry">
+      <div class="entry-header">
+        <a href="https://github.com/Underove/Pi-FIRI" class="entry-title">Pi-FiRi: LLM 결합 실시간 자율 순찰 및 화재 대응 시스템</a>
+        <span class="entry-meta">2025.05 – 2025.07</span>
+      </div>
+      <div class="entry-tech">Raspberry Pi, EfficientDet-Lite1, Solar Pro 2, OpenCV, PID Control</div>
+      <div class="entry-content">
         <ul>
-          <li>Flask 기반 추론(Server)·주행 제어(Pi) 분리 설계를 통한 연산 부하 해결 및 10 FPS 확보 [cite: 89]</li>
-          <li>EfficientDet-Lite1 최적화(49ms) 및 1.2초 연속 감지 로직으로 오탐지율 최소화 [cite: 90]</li>
-          <li>PID 제어 기반 안정 주행 및 Solar Pro 2 기반 자동 순찰 보고서/Q&A 챗봇 구현 [cite: 91, 92]</li>
+          <li>Flask 기반 추론·주행 제어 분리 설계를 통해 기기 연산 부하 해결 및 실시간성(10 FPS) 확보 [cite: 89]</li>
+          <li>EfficientDet-Lite1 최적화(49ms) 및 1.2초 연속 감지 로직 적용으로 오탐지율 최소화 [cite: 90]</li>
+          <li>Solar Pro 2 기반 JSON Schema를 적용하여 자동 순찰 보고서 생성 및 사용자 Q&A 챗봇 구현 [cite: 92]</li>
         </ul>
-        <div class="tech">Raspberry Pi, EfficientDet-Lite1, Flask, Solar Pro 2, OpenCV [cite: 63]</div>
-      </td>
-    </tr>
+      </div>
+    </div>
 
-    <tr class="project-row">
-      <td class="project-img"><img src="images/lg_aimers.jpg" alt="LG Aimers"></td>
-      <td class="project-desc">
-        <span class="title">식음업장 메뉴 수요 예측 AI 모델 (LG Aimers 7기)</span> <span class="award">[최종 5위]</span> [cite: 94]<br>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">LG Aimers 7기: 식음업장 메뉴 수요 예측 AI 모델</span>
+        <span class="entry-meta">최종 5위 (전국 800여 팀)</span>
+      </div>
+      <div class="entry-tech">Python, Pandas, BiLSTM, SHAP, Scikit-Learn</div>
+      <div class="entry-content">
         <ul>
-          <li>휴일 연수, 주변 관광 시설 내장객 수 등 매출 변동 외부 변수 피처화 및 Pruning [cite: 121]</li>
-          <li>BiLSTM 기반 양방향 시계열 맥락 학습 및 MSE/SMAPE 2단계 학습 전략 수립 [cite: 122]</li>
-          <li>커스텀 SMAPE 손실 함수 직접 구현을 통해 성능 약 22% 개선 [cite: 123]</li>
+          <li>휴일 정보 및 주변 관광지 내장객 수 등 매출 변동 핵심 외부 변수 피처화 및 중요도 기반 Pruning [cite: 121]</li>
+          <li>BiLSTM 활용 양방향 시계열 맥락 학습 및 MSE/SMAPE 2단계 학습 전략으로 모델 최적화 [cite: 122]</li>
+          <li>커스텀 손실 함수(SMAPE) 직접 구현을 통해 모델 성능 약 22% 개선 [cite: 123]</li>
         </ul>
-        <div class="tech">Python, Pandas, BiLSTM, Scikit-Learn, SHAP [cite: 119]</div>
-      </td>
-    </tr>
+      </div>
+    </div>
 
-    <tr class="project-row">
-      <td class="project-img"><img src="images/mixup_datathon.jpg" alt="MixUP"></td>
-      <td class="project-desc">
-        <span class="title">철강 공정 품질 불량 조기 탐지 (MixUP AI Datathon)</span> <span class="award">[최종 5위]</span> [cite: 127]<br>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">MixUP AI Datathon: 철강 공정 품질 불량 조기 탐지</span>
+        <span class="entry-meta">최종 5위</span>
+      </div>
+      <div class="entry-tech">Python, LightGBM, Optuna, SHAP, Scikit-learn</div>
+      <div class="entry-content">
         <ul>
-          <li>장력(Tension)과 속도 간 상관관계(q2=0.7914) 분석 기반 공정 안정성 지표 생성 [cite: 149]</li>
-          <li>예측 시점 불명 변수 14개 식별 및 제거로 Target Leakage 차단 및 신뢰도 확보 [cite: 150]</li>
-          <li>Optuna 하이퍼파라미터 튜닝을 통해 Contest Score 0.9994 달성 [cite: 151]</li>
+          <li>장력(Tension)과 속도 간 물리적 인과관계($q^2=0.7914$) 분석 기반 공정 안정성 지표 변수 생성 [cite: 149]</li>
+          <li>Target Leakage 차단을 위한 14개 변수 식별 및 제거로 모델의 실질적 신뢰도 확보 [cite: 150]</li>
+          <li>Optuna 활용 하이퍼파라미터 튜닝으로 Contest Score 0.9994 달성 및 SHAP 기반 공정 인사이트 도출 [cite: 151, 152]</li>
         </ul>
-        <div class="tech">Python, LightGBM, Optuna, SHAP, Scikit-learn [cite: 147]</div>
-      </td>
-    </tr>
+      </div>
+    </div>
 
-  </table>
+    <h2>Experience & Awards</h2>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">투빅스(ToBig's) 인공지능 및 빅데이터 연합동아리</span>
+        <span class="entry-meta">23기 운영부장</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">중앙대학교 항공우주 동아리 MACH</span>
+        <span class="entry-meta">12기 회전익 제어팀</span>
+      </div>
+    </div>
+    <div class="entry">
+      <div class="entry-header">
+        <span class="entry-title">중앙대학교 자기주도학습 ALCP</span>
+        <span class="entry-meta">교내 우수상 (1축 위성 자세 제어)</span>
+      </div>
+    </div>
+  </main>
 
-  <h2>Experience & Awards</h2>
-  <ul>
-    <li><b>ToBig's (인공지능 연합동아리):</b> 23기 운영부장 및 운영진 활동 수료 (2025.01~2026.01) [cite: 15, 16]</li>
-    <li><b>MixUP AI Datathon 운영:</b> Track 1 총괄 운영 및 관로 ID별 분할 로직 기반 Kaggle 시스템 구축 [cite: 156, 166, 167]</li>
-    <li><b>DACON LLM 편향 대응:</b> CoT 및 전문가 페르소나 결합 프롬프트 설계를 통한 응답 중립성 강화 [cite: 172, 177]</li>
-    <li><b>창의비행체 경진대회:</b> 2축 짐벌 및 433MHz 대역 HC-12 무선 통신 기반 임무 수행 (본선 진출) [cite: 192, 204, 205]</li>
-    <li><b>중앙대학교 ALCP:</b> 1축 위성 자세 제어 시스템 PID 알고리즘 구현 (교내 우수상) [cite: 209, 216, 217]</li>
-    <li><b>LG Aimers 7기:</b> 전국 800여 팀 중 오프라인 해커톤 본선 진출 및 최종 5위 [cite: 17, 18]</li>
-  </ul>
-
-  <footer style="margin-top: 50px; font-size: 0.8em; color: #888; text-align: center;">
-    &copy; 2026 Kim Sang Woo. All rights reserved. [cite: 218]
+  <footer>
+    &copy; 2026 Kim Sang Woo. All rights reserved.
   </footer>
 
 </body>
