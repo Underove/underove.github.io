@@ -35,7 +35,6 @@
       letter-spacing: 1px;
     }
 
-    /* 제목과 우측 정보를 정렬하기 위한 컨테이너 */
     .title-row {
       display: flex;
       justify-content: space-between;
@@ -45,7 +44,6 @@
     }
     .papertitle { font-weight: 700; color: #000; font-size: 15px; }
     
-    /* 우측 강조 텍스트 및 배지 스타일 */
     .meta-info { font-size: 13px; color: #666; font-weight: 500; }
     .badge {
       background-color: #5dade2;
@@ -70,18 +68,18 @@
 </head>
 
 <body>
-    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-      <tr style="padding:0px">
-        <td style="padding:0px">
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr style="padding:0px">
-              <td style="padding:2.5%;width:63%;vertical-align:middle">
-                <p class="name" style="text-align: center;">
-                   -ˋˏ ｡ﾟ  　　　  Sangwoo Kim  　　  ﾟ｡ ˎˊ-
+  <table class="main-table">
+    <tbody>
+      <tr>
+        <td style="padding: 40px 2.5% 20px 2.5%;">
+          <table style="width:100%; border:0;">
+            <tr>
+              <td style="width:63%; vertical-align:middle; padding-right: 20px;">
+                <p class="name" style="text-align: center;">-ˋˏ ｡ﾟ Sangwoo Kim ﾟ｡ ˎˊ-</p>
                 <p>
                   I am an engineer focused on bridging the gap between theoretical AI models and physical systems. 
                   Specializing in <strong>3D Reconstruction</strong> and <strong>Agentic AI</strong>, 
-                  I excel at optimizing complex algorithms to run efficiently on edge devices and real hardware.
+                  I excel at optimizing complex algorithms to run efficiently on edge devices and real hardware. 
                 </p>
                 <p style="text-align:left; margin-top: 25px;">
                   <a href="mailto:swjohn0121@gmail.com">Email</a> &nbsp;/&nbsp;
@@ -90,7 +88,7 @@
                 </p>
               </td>
               <td style="width:37%; text-align: right;">
-                <img src="images/IMG_9253.PNG" style="width:100%; max-width:200px; border-radius: 50%;" alt="profile photo">
+                <img src="images/profile.png" style="width:100%; max-width:200px; border-radius: 50%;" alt="profile photo">
               </td>
             </tr>
           </table>
@@ -107,7 +105,7 @@
                   <span class="papertitle">인공지능 및 빅데이터 연합동아리 ToBig's</span>
                   <span class="meta-info">2025.01 ~ 2026.01</span>
                 </div>
-                23기 운영부장 및 부원 활동 수료
+                23기 운영부장 및 부원 활동 수료 [cite: 15-16]
               </td>
             </tr>
             <tr>
@@ -116,7 +114,7 @@
                   <span class="papertitle">중앙대학교 공과대학 항공우주 동아리 MACH</span>
                   <span class="meta-info">2024.03 ~ 2024.09</span>
                 </div>
-                12기 회전익(드론) 제어팀 활동 및 비행 안정성 제어 시스템 연구
+                12기 회전익(드론) 제어팀 활동 및 비행 안정성 제어 시스템 연구 [cite: 13-14]
               </td>
             </tr>
             <tr class="highlight-bg">
@@ -125,7 +123,7 @@
                   <span class="papertitle">중앙대학교 ALCP 자기주도학습</span>
                   <span class="badge">교내 우수상</span>
                 </div>
-                1축 위성 자세 제어 시스템 설계 및 구현 스터디
+                1축 위성 자세 제어 시스템 설계 및 구현 스터디 [cite: 21, 209-210]
               </td>
             </tr>
           </table>
@@ -137,35 +135,33 @@
           <h2>Projects</h2>
           <table>
             <tr class="highlight-bg">
-              <td style="padding: 20px; width: 30%;"><img src="images/Curat3R.PNG" class="project-img"></td>
+              <td style="padding: 20px; width: 30%;"><img src="images/curat3r.png" class="project-img"></td>
               <td style="padding: 20px 20px 20px 0; width: 70%; vertical-align: middle;">
                 <div class="title-row">
                   <span class="papertitle">Curat3R: 나만의 3D 박물관 만들기</span>
                   <span class="meta-info">ToBig's 21st Conference</span>
                 </div>
                 <ul>
-                  <li>CLIP(ViT-B/32) 기반 Semantic Filtering 설계로 부적합 객체 사전 판별 및 리소스 최적화</li>
-                  <li>SPAR3D(0.7초 추론) 및 TRELLIS.2 결합 Dual-Track Inference로 생성 속도/품질 확보</li>
+                  <li>CLIP(ViT-B/32) 기반 Semantic Filtering 설계로 부적합 객체 사전 판별 및 리소스 최적화 [cite: 50]</li>
+                  <li>SPAR3D 및 TRELLIS.2 결합 Dual-Track Inference로 생성 속도/품질 확보 [cite: 51]</li>
                 </ul>
               </td>
             </tr>
-
             <tr>
-              <td style="padding: 20px; width: 30%;"><img src="images/Pi-FiFi.JPG" class="project-img"></td>
+              <td style="padding: 20px; width: 30%;"><img src="images/pifiri.jpg" class="project-img"></td>
               <td style="padding: 20px 20px 20px 0; width: 70%; vertical-align: middle;">
                 <div class="title-row">
                   <span class="papertitle">Pi-FiRi: 지능형 화재 감지 로봇 시스템</span>
                   <span class="meta-info">ToBig's 20th Conference</span>
                 </div>
                 <ul>
-                  <li>Flask 기반 추론·주행 제어 분리 설계로 기기 연산 부하 해결 및 10 FPS 확보</li>
-                  <li>Solar Pro 2 기반 JSON Schema 적용 자동 순찰 보고서 생성 및 Q&A 기능 구현</li>
+                  <li>Flask 기반 추론·주행 제어 분리 설계로 기기 연산 부하 해결 및 10 FPS 확보 [cite: 89]</li>
+                  <li>Solar Pro 2 기반 JSON Schema 적용 자동 순찰 보고서 생성 및 Q&A 기능 구현 [cite: 92]</li>
                 </ul>
               </td>
             </tr>
-
             <tr class="highlight-bg">
-              <td style="padding: 20px; width: 30%;"><img src="images/LG_Aimers.jpg" class="project-img"></td>
+              <td style="padding: 20px; width: 30%;"><img src="images/lg_aimers.jpg" class="project-img"></td>
               <td style="padding: 20px 20px 20px 0; width: 70%; vertical-align: middle;">
                 <div class="title-row">
                   <span class="papertitle">LG Aimers 7기: 식음업장 메뉴 수요 예측 AI 모델</span>
@@ -175,36 +171,34 @@
                   </div>
                 </div>
                 <ul>
-                  <li>휴일 및 주변 관광지 내장객 수 등 외부 변수 피처화 및 BiLSTM 맥락 학습 적용</li>
-                  <li>커스텀 손실 함수(SMAPE) 직접 구현을 통해 성능 약 22% 개선</li>
+                  <li>휴일 및 주변 관광지 내장객 수 등 외부 변수 피처화 및 BiLSTM 맥락 학습 적용 [cite: 121-122]</li>
+                  <li>커스텀 손실 함수(SMAPE) 직접 구현을 통해 성능 약 22% 개선 [cite: 123]</li>
                 </ul>
               </td>
             </tr>
-
             <tr>
-              <td style="padding: 20px; width: 30%;"><img src="images/부산대.jpg" class="project-img"></td>
+              <td style="padding: 20px; width: 30%;"><img src="images/busan_drone.jpg" class="project-img"></td>
               <td style="padding: 20px 20px 20px 0; width: 70%; vertical-align: middle;">
                 <div class="title-row">
                   <span class="papertitle">부산대학교 총장배 창의비행체 경진대회</span>
                   <span class="badge">본선 진출</span>
                 </div>
                 <ul>
-                  <li>고정익 추종 촬영을 위한 2축 짐벌 및 리트랙팅 랜딩기어 시스템 제어 알고리즘 설계</li>
-                  <li>HC-12 RF 모듈을 활용한 지상 관제소-드론 간 1km 대역 원격 명령 체계 구축</li>
+                  <li>고정익 추종 촬영용 2축 짐벌 및 리트랙팅 랜딩기어 시스템 제어 알고리즘 설계 [cite: 204]</li>
+                  <li>HC-12 RF 모듈을 활용한 지상 관제소-드론 간 1km 대역 원격 명령 체계 구축 [cite: 205]</li>
                 </ul>
               </td>
             </tr>
-
             <tr class="highlight-bg">
-              <td style="padding: 20px; width: 30%;"><img src="images/IMG_4057.PNG" class="project-img"></td>
+              <td style="padding: 20px; width: 30%;"><img src="images/mixup_admin.png" class="project-img"></td>
               <td style="padding: 20px 20px 20px 0; width: 70%; vertical-align: middle;">
                 <div class="title-row">
                   <span class="papertitle">제 2회 MixUP AI Datathon 운영 및 출제</span>
                   <span class="meta-info">Track 1 총괄 운영</span>
                 </div>
                 <ul>
-                  <li>관로 ID별 분할 로직 설계로 리더보드 무결성 확보</li>
-                  <li>DACON Bias-A-Thon: CoT 기반 프롬프팅으로 LLM 응답 중립성 강화 프로세스 정립</li>
+                  <li>관로 ID별 분할 로직 설계로 리더보드 무결성 확보 [cite: 166]</li>
+                  <li>DACON Bias-A-Thon: CoT 기반 프롬프팅으로 LLM 응답 중립성 강화 프로세스 정립 [cite: 177]</li>
                 </ul>
               </td>
             </tr>
