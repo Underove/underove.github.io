@@ -1,190 +1,356 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sangwoo Kim | Industrial AI &amp; Reinforcement Learning</title>
-  <meta name="author" content="Sangwoo Kim">
-  <meta name="description" content="Sangwoo Kim, Chung-Ang University graduate and researcher at KETI, working on AI agents for thermal-process manufacturing.">
-  <meta property="og:title" content="Sangwoo Kim | Industrial AI &amp; Reinforcement Learning">
-  <meta property="og:description" content="Researcher at KETI, connecting learning, decision-making, and systems that work in the real world.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://underove.github.io/">
-  <meta property="og:image" content="https://underove.github.io/images/main.jpg">
-  <link rel="canonical" href="https://underove.github.io/">
-  <link rel="icon" href="images/favicon.png">
-  <link rel="stylesheet" href="stylesheet.css">
-</head>
-<body>
-<a class="skip-link" href="#main">Skip to content</a>
-<div class="page">
-  <header class="intro">
-    <img class="portrait" src="images/main.jpg" alt="Sangwoo Kim" width="220" height="220" fetchpriority="high">
-    <div class="intro-copy">
-      <p class="eyebrow">Researcher · Industrial AI</p>
-      <h1>Sangwoo Kim <span lang="ko">김상우</span></h1>
-      <p class="affiliation">Autonomous Manufacturing Research Center<br>Korea Electronics Technology Institute (KETI)</p>
-      <p>I graduated from Chung-Ang University in August 2026, double majoring in Civil &amp; Environmental Engineering and Electrical &amp; Electronic Engineering. I am currently a researcher at the Autonomous Manufacturing Research Center, Korea Electronics Technology Institute (KETI), where I work on AI agents for thermal-process manufacturing.</p>
-      <p>My current interests are <strong>multi-agent reinforcement learning</strong>, <strong>reinforcement learning for manufacturing control</strong>, and <strong>industrial AI agents</strong>. My earlier work in drone control, time-series modeling, and vision-language systems shapes how I approach these questions.</p>
-      <p class="personal-note">I enjoy turning theory into systems that work in the real world.</p>
-      <div class="contact-links" aria-label="Contact and documents">
-        <a href="mailto:swjohn0121@keti.ac.kr">swjohn0121@keti.ac.kr</a>
-        <a href="pdf/cv.pdf">CV <span aria-hidden="true">↗</span></a>
-        <a href="pdf/portfolio.pdf">Project portfolio (PDF) <span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/Underove">GitHub <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </header>
-  <nav class="section-nav" aria-label="Page sections">
-    <a href="#research">Research</a><a href="#interests">Interests</a><a href="#projects">Projects</a><a href="#background">Background</a><a href="#skills">Skills</a>
-  </nav>
-  <main id="main">
-    <section id="research" aria-labelledby="research-title">
-      <h2 id="research-title">Research Experience</h2>
-      <article class="research-entry">
-        <div class="entry-heading"><h3>Korea Electronics Technology Institute</h3><p class="date">Sep. 2026 – Present</p></div>
-        <p class="entry-meta">Researcher · Autonomous Manufacturing Research Center</p>
-        <p>I participate in Subproject 1 of <em>Development of Core Foundation Model and AI Agent Technology for Thermal-Process Manufacturing (TP-MFM)</em>, focusing on AI-agent research.</p>
-        <p>I contribute to first-year agent design spanning context interpretation, task generation and scheduling, foundation-model routing, and feedback-based policy refinement for operator-approved operating-condition recommendations. I also review industrial reinforcement-learning studies to inform state and KPI definitions, physical constraints, and requirements for offline-learning and virtual-testbed evaluation.</p>
-      </article>
-    </section>
-    <section id="interests" aria-labelledby="interests-title">
-      <h2 id="interests-title">Research Interests</h2>
-      <div class="interest-list">
-        <article><h3>Multi-Agent Reinforcement Learning</h3><p>How can learning agents coordinate decisions across coupled manufacturing processes? Motivated by my thermal-process agent research, I want to study cooperation, credit assignment, and the balance between local objectives and plant-level constraints under changing operating conditions.</p></article>
-        <article><h3>Reinforcement Learning for Manufacturing Control</h3><p>I am interested in data-efficient policies that balance temperature accuracy, thermal uniformity, and heat input within operating limits. My focus is on offline learning, simulation-based evaluation, and constraint-aware policy improvement for thermal processes.</p></article>
-        <article><h3>Industrial AI Agents</h3><p>Building on my KETI agent-design work and NOVA, I want to connect LLM-based context interpretation and task planning with prediction and specialized control modules. I am interested in reliable tool use and feedback, with explicit safety checks and operator approval for operating-condition recommendations.</p></article>
-      </div>
-    </section>
-    <section id="education" aria-labelledby="education-title">
-      <h2 id="education-title">Education</h2>
-      <div class="entry-heading"><h3>Chung-Ang University</h3><p class="date">Mar. 2021 – Aug. 2026</p></div>
-      <p>B.S., Civil &amp; Environmental Engineering and Electrical &amp; Electronic Engineering (double major)</p>
-      <p class="muted">Previously studied at Hongik University, Mar. 2019 – Feb. 2021, before transferring to Chung-Ang University.</p>
-    </section>
-    <section id="projects" aria-labelledby="projects-title">
-      <div class="section-heading"><h2 id="projects-title">Selected Projects</h2><p>From evidence-grounded agents to models running in physical systems.</p></div>
-      <div class="project-list">
-        <article class="project" id="nova">
-          <div class="project-visual nova-visual" aria-hidden="true"><span>NOVA</span><small>Evidence → Tools → Answers</small></div>
-          <div>
-            <div class="entry-heading"><h3>NOVA</h3><p class="date">May – Jul. 2026</p></div>
-            <p class="project-subtitle">Evidence-Grounded Financial Research Assistant</p>
-            <p class="entry-meta">Independent project · AI-assisted development</p>
-            <p>Built a financial fact-checking and question-answering service that retrieves evidence from DART disclosures and uploaded PDFs and uses external tools to check claims.</p>
-            <p><strong>My work.</strong> User-scoped pgvector retrieval, a FastAPI backend with Next.js and SwiftUI clients, and cache corrections with parallel company synchronization and claim verification.</p>
-            <p class="tags">LLM agents · Tool calling · RAG · FastAPI · pgvector</p>
-          </div>
-        </article>
-        <article class="project" id="pi-firi">
-          <img class="project-visual" src="images/firi.jpg" alt="Pi-FiRi fire-monitoring robot" width="320" height="200" loading="lazy">
-          <div>
-            <div class="entry-heading"><h3>Pi-FiRi</h3><p class="date">May – Jul. 2025</p></div>
-            <p class="project-subtitle">Fire-Monitoring Robot with an LLM Agent</p>
-            <p class="entry-meta">ToBig's 20th Conference · Four-person team</p>
-            <p>Combined fire and smoke detection with patrol logs and LLM reporting in a Raspberry Pi robot system.</p>
-            <p><strong>My work.</strong> Designed the distributed Raspberry Pi / PC inference architecture and LLM reporting integration; collaborated on training and control. Integrated EfficientDet-Lite1, continuous-detection filtering, and four-tier alerts.</p>
-            <p class="tags">Edge AI · Computer vision · LLM integration · Raspberry Pi</p>
-            <p class="resource-links"><a href="pdf/20poster.pdf">Poster</a><a href="pdf/20ppt.pdf">Slides</a><a href="https://www.youtube.com/watch?v=3GLE6odzigI">Demo</a></p>
-          </div>
-        </article>
-        <article class="project" id="curat3r">
-          <img class="project-visual" src="images/curat3r.png" alt="Curat3R 3D reconstruction and archiving platform" width="320" height="200" loading="lazy">
-          <div>
-            <div class="entry-heading"><h3>Curat3R</h3><p class="date">Oct. 2025 – Jan. 2026</p></div>
-            <p class="project-subtitle">Single-Image 3D Reconstruction Archiving Platform</p>
-            <p class="entry-meta">ToBig's 21st Conference · Five-person team</p>
-            <p>A digital archiving platform that turns a single image into a 3D object for an interactive gallery.</p>
-            <p><strong>My work.</strong> Designed the system architecture and a CLIP ViT-B/32 input-suitability gate across six categories, with accept/reject decisions and a human override. The platform connects SPAR3D previews, TRELLIS.2 reconstruction, and a Three.js gallery.</p>
-            <p class="tags">Vision-language models · Input validation · 3D reconstruction</p>
-            <p class="resource-links"><a href="pdf/21poster.pdf">Poster</a><a href="pdf/21ppt.pdf">Slides</a><a href="https://www.youtube.com/watch?v=ptxr5rqzewE">Demo</a></p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section id="additional-projects" aria-labelledby="additional-title">
-      <h2 id="additional-title">Additional Projects</h2>
-      <div class="compact-projects">
-        <article class="project">
-          <img class="project-visual" src="images/warehouse.png" alt="Smart-warehouse shipping-delay prediction project" width="320" height="200" loading="lazy">
-          <div>
-          <div class="entry-heading"><h3>Smart-Warehouse Shipping-Delay Prediction</h3><p class="date">Apr. – May 2026</p></div>
-          <p class="entry-meta">DACON · Independent project · Top 11%</p>
-          <p>Reduced validation MAE from 12.616 to 9.989 with a four-model ensemble of LightGBM, CatBoost, BiGRU, and Attention GRU. Built a Dash dashboard for scenario-based batch predictions.</p>
-          <p class="resource-links"><a href="https://dacon.io/competitions/official/236696/overview/description">Competition</a></p>
-          </div>
-        </article>
-        <article class="project">
-          <img class="project-visual" src="images/lg_aimers.jpg" alt="LG Aimers menu-demand forecasting project" width="320" height="200" loading="lazy">
-          <div>
-          <div class="entry-heading"><h3><img class="org-logo" src="images/lgai.jpg" alt="" width="28" height="28" loading="lazy">Menu Demand Forecasting</h3><p class="date">Aug. – Sep. 2025</p></div>
-          <p class="entry-meta">LG Aimers 7th · Four-person team · 5th place in the offline finals</p>
-          <p>Focused on loss-function design and rolling validation for CNN–BiLSTM forecasts of weekly menu demand. Our team advanced to the offline finals and recorded 5th place.</p>
-          <p class="resource-links"><a href="https://dacon.io/competitions/official/236594/overview/description">Competition</a><a href="pdf/lg.pdf">Slides</a></p>
-          </div>
-        </article>
-        <article class="project">
-          <img class="project-visual" src="images/mixup1.png" alt="MixUP steel-quality prediction project" width="320" height="200" loading="lazy">
-          <div>
-          <div class="entry-heading"><h3>Steel Quality Prediction</h3><p class="date">May 2025</p></div>
-          <p class="entry-meta">MixUP AI Datathon · Three-person team · 5th place</p>
-          <p>Contributed EDA, preprocessing, and LightGBM modeling for OK/NG classification. Used RFECV plus a process-derived feature for a final seven-feature model and SHAP for interpretation.</p>
-          <p class="resource-links"><a href="https://www.kaggle.com/competitions/2025-mix-up-ai-datathon-track2">Competition</a><a href="pdf/tobigi.pdf">Slides</a></p>
-          </div>
-        </article>
-        <article class="project">
-          <img class="project-visual" src="images/llm.png" alt="DACON Bias-A-Thon language-model challenge" width="320" height="200" loading="lazy">
-          <div>
-          <div class="entry-heading"><h3>Prompt-Based Bias Mitigation</h3><p class="date">Apr. – May 2025</p></div>
-          <p class="entry-meta">DACON Bias-A-Thon · Track 2 · Team project</p>
-          <p>Designed context-grounded two-stage prompts without fine-tuning and regex-based answer extraction for consistent response formatting.</p>
-          <p class="resource-links"><a href="https://dacon.io/competitions/official/236487/overview/description">Competition</a></p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <section id="background" aria-labelledby="background-title">
-      <h2 id="background-title">Activities &amp; Earlier Engineering Work</h2>
-      <div class="compact-projects">
-        <article class="project">
-          <img class="project-visual" src="images/mixup.png" alt="Second 2025 MixUP AI Datathon" width="320" height="200" loading="lazy">
-          <div>
-          <div class="entry-heading"><h3><img class="org-logo" src="images/tobigs.png" alt="" width="28" height="28" loading="lazy">ToBig's</h3><p class="date">Jan. 2025 – Jan. 2026</p></div>
-          <p>23rd operations manager and member of the AI and big-data community. Co-designed a vibration/acoustic leak-level regression task and Kaggle-based evaluation for the second 2025 MixUP AI Datathon.</p>
-          <p class="resource-links"><a href="https://datamarket-tobigs.github.io">Community</a><a href="https://www.kaggle.com/competitions/2025-2-mix-up-ai-datathon-track1">Datathon</a></p>
-          </div>
-        </article>
-        <article class="project">
-          <img class="project-visual" src="images/busan.jpg" alt="Creative aircraft competition and drone-control project" width="320" height="200" loading="lazy">
-          <div>
-          <div class="entry-heading"><h3><img class="org-logo" src="images/mach.png" alt="" width="28" height="28" loading="lazy">MACH · Drone Control</h3><p class="date">Mar. – Sep. 2024</p></div>
-          <p>Worked on drone gimbal and landing-gear control using Raspberry Pi, OpenCV, and HC-12 RF communication. A fixed-wing tracking camera project advanced to the finals of the 2024 Pusan National University creative aircraft competition.</p>
-          <p class="resource-links"><a href="pdf/document.pdf">Project document</a></p>
-          </div>
-        </article>
-        <article>
-          <div class="entry-heading"><h3><img class="org-logo" src="images/cau.png" alt="" width="28" height="28" loading="lazy">Single-Axis Satellite Attitude Control</h3><p class="date">2024</p></div>
-          <p>Designed and implemented a study system based on conservation of angular momentum. Received an Excellence Award in Chung-Ang University's self-directed learning ALCP program.</p>
-        </article>
-      </div>
-    </section>
-    <section id="skills" aria-labelledby="skills-title">
-      <h2 id="skills-title">Skills</h2>
-      <dl class="skills">
-        <dt>ML &amp; agents</dt><dd>Time-series modeling, LLM agents, tool calling, RAG, computer vision, 3D reconstruction</dd>
-        <dt>Frameworks</dt><dd>PyTorch, TensorFlow, scikit-learn, LightGBM, OpenCV, Pandas</dd>
-        <dt>Programming</dt><dd>Python, C++</dd>
-        <dt>Systems &amp; edge</dt><dd>FastAPI, PostgreSQL / pgvector, Git, Raspberry Pi, Arduino</dd>
-        <dt>Languages</dt><dd>Korean (native), English</dd>
-      </dl>
-      <div class="credential"><img src="images/kdata.jpeg" alt="Korea Data Agency" width="80" height="52" loading="lazy"><p><strong>Certification</strong><br>Big Data Analysis Engineer, Korea Data Agency (KDATA), Jul. 2026</p></div>
-    </section>
-  </main>
-  <footer>
-    <p>Get in touch: <a href="mailto:swjohn0121@keti.ac.kr">swjohn0121@keti.ac.kr</a></p>
-    <p>© 2026 Sangwoo Kim · Updated October 2026</p>
-    <p class="attribution">Originally adapted from <a href="https://jonbarron.info/">Jon Barron's academic website</a>.</p>
-  </footer>
-</div>
-</body>
+<!DOCTYPE HTML>
+<html lang="ko">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Sangwoo Kim</title>
+    <meta name="author" content="Sangwoo Kim">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Inter', -apple-system, sans-serif; font-size: 15px; color: #222; line-height: 1.5; }
+      a { color: #1772d0; text-decoration: none; }
+      a:hover { text-decoration: underline; }
+      .name { font-size: 32px; font-weight: 700; color: #000; letter-spacing: -0.5px; }
+      h2 { font-size: 22px; font-weight: 600; margin-top: 40px; margin-bottom: 10px; color: #000; border: none; }
+      .papertitle { font-weight: 700; color: #000; font-size: 16px; }
+      
+      .meta-right { 
+        float: right; 
+        font-size: 13px; 
+        color: #666; 
+        font-weight: bold; 
+        white-space: nowrap; 
+        vertical-align: middle;
+      }
+      
+      .badge-award {
+        color: #1772d0; 
+        background-color: #e6f2ff; 
+        padding: 2px 6px; 
+        border-radius: 4px;
+        vertical-align: middle;
+      }
+
+      /* 설명 아래에 들어가는 연한 날짜 스타일 */
+      .project-date {
+        font-size: 13.5px;
+        color: #888; /* 글씨 밝기를 줄여주는 연한 회색 */
+        display: inline-block;
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:850px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                   -ˋˏ ｡ﾟ  　　　 Sangwoo Kim   　　  ﾟ｡ ˎˊ-
+                </p>
+                <p>
+                  I graduated from <a href="https://www.cau.ac.kr/index.do">Chung-Ang University</a> in August 2026, double majoring in Civil &amp; Environmental Engineering and Electrical &amp; Electronic Engineering. 
+                  <br>
+                  I am currently a researcher at the Autonomous Manufacturing Research Center, Korea Electronics Technology Institute (KETI), working on AI agents for thermal-process manufacturing.
+                  <br><br>
+                  My main interests are <strong>Multi-Agent Reinforcement Learning (MARL)</strong>, <strong>Reinforcement Learning for Manufacturing Control</strong>, and <strong>Industrial AI Agents</strong>. I am interested in how learning agents coordinate decisions and use tools reliably under real operating constraints.
+                  <br>
+                  My roots are in hardware — drone flight control and satellite attitude systems — which taught me to respect latency, constraints, and systems that must work in the real world. 
+                  <br>
+                  I carry that mindset into studying learning-based decision-making and building AI agents for manufacturing systems.
+                  <br><br>
+                  For more details on my project experience, please refer to my <a href="pdf/portfolio.pdf">Portfolio 🙌🏻</a>.
+                </p>
+                <p style="text-align:center">
+                  <a href="pdf/cv.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="mailto:swjohn0121@keti.ac.kr">Email</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/Underove" target="_blank">Github</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <a href="images/main.jpg"><img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/main.jpg" class="hoverZoomLink"></a>
+              </td>
+            </tr>
+          </tbody></table>
+          
+          <!-- Experience & Awards -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+              <tr>
+              <td style="padding:20px 2.5% 10px 2.5%;width:100%;vertical-align:middle">
+                <h2>🌐 Experience & Awards</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:8%;vertical-align:middle;text-align:center;">
+                  <img src="images/tobigs.png" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px;width:92%;vertical-align:top;">
+                  <span class="papertitle">인공지능 및 빅데이터 분석 연합동아리 ToBig's</span>
+                  <span class="meta-right">2025.01 ~ 2026.01</span>
+                  <br>
+                  23기 운영부장 및 부원 활동 수료
+                  <br>
+                  <a href="https://datamarket-tobigs.github.io">link</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:20px;width:8%;vertical-align:middle;text-align:center;">
+                  <img src="images/lgai.jpg" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px;width:92%;vertical-align:top;">
+                  <span class="papertitle">LG Aimers 7기 프로그램 교육과정</span>
+                  <span class="meta-right">2025.07 ~ 2025.09</span>
+                  <br>
+                  Phase 3 오프라인 해커톤 진출 및 <strong>최종 5위</strong>
+                  <br>
+                  <a href="https://www.lgaimers.ai">link</a>
+                </td>
+              </tr>
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:8%;vertical-align:middle;text-align:center;">
+                  <img src="images/mach.png" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px;width:92%;vertical-align:top;">
+                  <span class="papertitle">중앙대학교 공과대학 항공우주 동아리 MACH</span>
+                  <span class="meta-right">2024.03 ~ 2024.09</span>
+                  <br>
+                  12기 회전익(드론) 제어팀 활동 및 비행 안정성 제어 시스템 연구
+                  <br>
+                  <a href="https://cafe.naver.com/caumach">link</a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding:20px;width:8%;vertical-align:middle;text-align:center;">
+                  <img src="images/cau.png" style="width:70px;height:70px;border-radius:50%;object-fit:cover;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px;width:92%;vertical-align:top;">
+                  <span class="papertitle">2024 중앙대학교 자기주도학습 ALCP</span>
+                  <span class="meta-right"><span class="badge-award">🏆교내 우수상</span></span>
+                  <br>
+                  각운동량 보존 법칙을 활용한 1축 위성 자세 제어 시스템 설계 및 구현 스터디
+                  <br>
+                  <em class="project-date">2024.07.05</em>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px 2.5% 10px 2.5%;width:100%;vertical-align:middle">
+                <h2>📜 Certificates</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:15%;vertical-align:middle;text-align:center;">
+                  <img src="images/kdata.jpeg" style="width:122px;max-width:none;background:#fff;padding:8px;border-radius:8px;border:1px solid #ddd;box-sizing:border-box;">
+                </td>
+                <td style="padding:20px;width:85%;vertical-align:top;">
+                  <span class="papertitle">빅데이터분석기사</span>
+                  <span class="meta-right">2026.07.10</span>
+                  <br>
+                  한국데이터산업진흥원
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:20px 2.5% 10px 2.5%;width:100%;vertical-align:middle">
+                <h2>🚀 Projects</h2>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/warehouse.png" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">2026 DACON : 스마트 창고 출고 지연 예측 AI 경진대회</span>
+                  <span class="meta-right">상위 11%</span>
+                  <br>
+                  AMR(자율이동로봇) 물류창고 운영 데이터 기반, 출고 지연 시간을 미리 예측하는 모델 개발
+                  <br>
+                  <em class="project-date">2026.04 ~ 2026.05</em>
+                  <br>
+                  <a href="https://dacon.io/competitions/official/236696/overview/description">link</a>
+                </td>
+              </tr>
+              
+              <tr>
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/curat3r.png" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">Curat3R: 나만의 3D 박물관 만들기</span>
+                  <span class="meta-right">ToBig's 21st Conference</span>
+                  <br>
+                  단일 이미지 기반 3D Reconstruction 기술을 활용한 디지털 아카이빙 플랫폼
+                  <br>
+                  <em class="project-date">2025.10 ~ 2026.01</em>
+                  <br>
+                  <a href="pdf/21poster.pdf">poster</a>
+                  /
+                  <a href="pdf/21ppt.pdf">ppt</a>
+                  /
+                  <a href="https://www.youtube.com/watch?v=ptxr5rqzewE">demo</a>
+                </td>
+              </tr>
+
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/firi.jpg" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">Pi-FiRi: 지능형 화재 감지 로봇 시스템</span>
+                  <span class="meta-right">ToBig's 20th Conference</span>
+                  <br>
+                  라즈베리파이 로봇과 LLM을 결합한 실시간 자율 순찰 및 화재 대응 시스템
+                  <br>
+                  <em class="project-date">2025.05 ~ 2025.07</em>
+                  <br>
+                  <a href="pdf/20poster.pdf">poster</a>
+                  /
+                  <a href="pdf/20ppt.pdf">ppt</a>
+                  /
+                  <a href="https://www.youtube.com/watch?v=3GLE6odzigI">demo</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/lg_aimers.jpg" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">LG Aimers 7기: 식음업장 메뉴 수요 예측 AI 모델</span>
+                  <span class="meta-right"><span class="badge-award">🏆 최종 5위</span></span>
+                  <br>
+                  시계열 데이터 분석을 통한 식음업장 1주일 단위 메뉴별 판매량 예측
+                  <br>
+                  <em class="project-date">2025.08 ~ 2025.09</em>
+                  <br>
+                  <a href="https://dacon.io/competitions/official/236594/overview/description">link</a>
+                  /
+                  <a href="pdf/lg.pdf">ppt</a>
+                </td>
+              </tr>
+
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/llm.png" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">2025 DACON Bias-A-Thon: LLM 편향 대응 챌린지</span>
+                  <span class="meta-right">프롬프트 기반 접근</span>
+                  <br>
+                  LLM 응답 내 사회적·윤리적 편향 탐지 및 중립성 확보 위한 2단계 추론 아키텍처 설계
+                  <br>
+                  <em class="project-date">2025.04 ~ 2025.05</em>
+                  <br>
+                  <a href="https://dacon.io/competitions/official/236487/overview/description">link</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/mixup1.png" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">2025 MixUP AI Datathon: 국내 철강 기업 제품 품질 예측 및 공정 최적화</span>
+                  <span class="meta-right"><span class="badge-award">🏆 최종 5위</span></span>
+                  <br>
+                  스마트팩토리 센서 데이터를 활용한 품질 불량(OK/NG) 조기 탐지 및 최적화
+                  <br>
+                  <em class="project-date">2025.05 ~ 2025.05</em>
+                  <br>
+                  <a href="https://www.kaggle.com/competitions/2025-mix-up-ai-datathon-track2">link</a>
+                  /
+                  <a href="pdf/tobigi.pdf">ppt</a>
+                </td>
+              </tr>
+
+              <tr bgcolor="#f0f8ff">
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/mixup.png" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">2025 제 2회 MixUP AI Datathon: 진동/음향 데이터 누수 예측 회귀</span>
+                  <span class="meta-right">총괄 운영 및 출제</span>
+                  <br>
+                  산업 현장 비정형 데이터를 활용한 누수 수준 예측 회귀 과제 설계
+                  <br>
+                  <em class="project-date">2025.11 ~ 2025.11</em>
+                  <br>
+                  <a href="https://www.kaggle.com/competitions/2025-2-mix-up-ai-datathon-track1">link</a>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:30%;vertical-align:top;">
+                  <img src="images/busan.jpg" style="width:100%;max-width:180px;aspect-ratio:16/9;display:block;object-fit:cover;border-radius:6px;border:1px solid #ddd;">
+                </td>
+                <td style="padding:20px 20px 20px 0px;width:70%;vertical-align:top;">
+                  <span class="papertitle">2024 부산대학교 총장배 창의비행체 경진대회</span>
+                  <span class="meta-right"><span class="badge-award">🚀 본선 진출</span></span>
+                  <br>
+                  고정익 추종 촬영용 2축 짐벌 시스템 제어 및 HC-12 RF 모듈 기반 원격 명령 체계 구축
+                  <br>
+                  <em class="project-date">2024.08 ~ 2024.08</em>
+                  <br>
+                  <a href="https://cafe.naver.com/f-e/cafes/19395114/articles/2260?boardtype=L&menuid=103&referrerAllArticles=false&page=2">link</a>
+                  /
+                  <a href="pdf/document.pdf">document</a>
+                </td>
+              </tr>
+
+            </tbody>
+          </table>
+
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:0px">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+          
+        </td>
+      </tr>
+    </tbody></table>
+
+    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr>
+        <td style="padding:20px;width:100%;vertical-align:middle">
+          <br>
+          <p style="text-align:center;font-size:small;color:#888;">
+            Design and source code adapted from <a href="https://jonbarron.info/" style="color:#888;text-decoration:underline;">Jon Barron's website</a>
+            <br>
+            &copy; 2026 Sangwoo Kim.
+          </p>
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
 </html>
