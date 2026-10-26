@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="270" viewBox="0 0 480 270" role="img" aria-labelledby="title desc">
+  <title id="title">TP-MFM AI agent design concept</title>
+  <desc id="desc">A concept illustration of context interpretation, task planning, and foundation-model routing for operator-approved thermal-process operating recommendations. This is not a deployed-system photograph.</desc>
+  <rect width="480" height="270" fill="#edf6ff"/>
+  <text x="28" y="51" fill="#102d4b" font-family="Arial, sans-serif" font-size="33" font-weight="700">TP-MFM</text>
+  <text x="28" y="79" fill="#4a6580" font-family="Arial, sans-serif" font-size="17">Thermal-process AI agents</text>
+  <g fill="#fff" stroke="#b5cfe9" stroke-width="2">
+    <rect x="28" y="108" width="126" height="76" rx="12"/>
+    <rect x="177" y="108" width="126" height="76" rx="12"/>
+    <rect x="326" y="108" width="126" height="76" rx="12"/>
+  </g>
+  <g fill="#1772d0" font-family="Arial, sans-serif" text-anchor="middle" font-size="23" font-weight="700">
+    <text x="91" y="154">Context</text>
+    <text x="240" y="154">Plan</text>
+    <text x="389" y="154">Route</text>
+  </g>
+  <g fill="none" stroke="#1772d0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M158 146h14m-5-5 5 5-5 5"/>
+    <path d="M307 146h14m-5-5 5 5-5 5"/>
+  </g>
+  <rect x="28" y="207" width="424" height="34" rx="8" fill="#fff4e5"/>
+  <text x="240" y="229" fill="#8c561a" font-family="Arial, sans-serif" font-size="16" text-anchor="middle">Operator-approved recommendations</text>
+  <text x="451" y="260" fill="#6c8399" font-family="Arial, sans-serif" font-size="12" text-anchor="end">Concept diagram</text>
+</svg>
